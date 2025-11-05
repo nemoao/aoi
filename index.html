@@ -1,0 +1,392 @@
+ <!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nemoto Aoi | Webデザイナー</title>
+
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./js/common.js" defer></script>
+
+  <meta name="description" content="ポートフォリオ" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ===== Header ===== -->
+  <header>
+  <nav class="navbar">
+    <!-- ハンバーガーボタン -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- ナビゲーションリンク -->
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#works" class="nav-btn">制作実績</a></li>
+    <li><a href="#about" class="nav-btn">私について</a></li>
+    <li><a href="#skills" class="nav-btn">スキル＆ツール</a></li>
+  </ul>
+
+  </nav>
+</header>
+
+
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero">
+    <div class="hero-background">
+      <img src="./img/image 1.png" alt="Background" class="hero-bg-img" />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">Nemoto Aoi</h1>
+        <div class="glass-bubble"></div>
+
+        <div class="mobile-bubbles">
+  <div class="mobile-bubble bubble1"></div>
+  <div class="mobile-bubble bubble2"></div>
+  <div class="mobile-bubble bubble3"></div>
+</div>
+
+        
+        <p class="hero-subtitle">WEBデザイナー</p>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="#works" class="btn-primary btn-glass">制作実績を見る</a>
+        <a href="#about" class="btn-secondary btn-glass">私について <span class="btn-arrow">↓</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Works Section ===== -->
+  <section id="works" class="works section fade-in">
+    <h2>制作実績</h2>
+
+    <div class="tabs">
+      <button class="tab active" data-filter="all">すべて</button>
+      <button class="tab" data-filter="web">WEBサイト</button>
+      <button class="tab" data-filter="lp">LP</button>
+      <button class="tab" data-filter="banner">バナー</button>
+      <button class="tab" data-filter="code">コーディング</button>
+    </div>
+
+    <div class="works-grid">
+      <!-- LPカード -->
+      <div class="work-card" data-category="lp">
+        <div class="work-image">
+          <img src="./img/Group 199.png" alt="LP" />
+          <a href="./projects/project-1.html" class="hover-link">詳細を見る</a>
+        </div>
+        <div class="work-content">
+          <h3>LP</h3>
+          <p>受講生募集を目的としたオンライン学習サービスのLP</p>
+          <div class="work-tags">
+            <span class="tag gradient-tag">Figma</span>
+            <span class="tag gradient-tag">レスポンシブ</span>
+          </div>
+          <div class="work-link-inline">
+            <a href="./projects/project-1.html" class="project-link">プロジェクトを見る</a>
+            <a href="./projects/project-1.html" class="work-bottom-link">
+              <img src="./img/Button.png" alt="詳細アイコン" class="project-icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Webカード -->
+      <div class="work-card" data-category="web">
+        <div class="work-image">
+          <img src="./img/Group 200.png" alt="Webサイト" />
+          <a href="./projects/project-2.html" class="hover-link">詳細を見る</a>
+        </div>
+        <div class="work-content">
+          <h3>Webサイト</h3>
+          <p>BtoC向け新規顧客獲得の為のコーポレートサイト</p>
+          <div class="work-tags"><span class="tag gradient-tag">Figma</span></div>
+          <div class="work-link-inline">
+            <a href="./projects/project-2.html" class="project-link">プロジェクトを見る</a>
+            <a href="./projects/project-2.html" class="work-bottom-link">
+              <img src="./img/Button.png" alt="詳細アイコン" class="project-icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Webカード -->
+      <div class="work-card" data-category="web">
+        <div class="work-image">
+          <img src="./img/Group 201.png" alt="Webサイト" />
+          <a href="./projects/project-3.html" class="hover-link">詳細を見る</a>
+        </div>
+        <div class="work-content">
+          <h3>Webサイト</h3>
+          <p>BtoBの新規顧客獲得の為のコーポレートサイト</p>
+          <div class="work-tags">
+            <span class="tag gradient-tag">Figma</span>
+            <span class="tag gradient-tag">レスポンシブ</span>
+          </div>
+          <div class="work-link-inline">
+            <a href="./projects/project-3.html" class="project-link">プロジェクトを見る</a>
+            <a href="./projects/project-3.html" class="work-bottom-link">
+              <img src="./img/Button.png" alt="詳細アイコン" class="project-icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- LPカード -->
+      <div class="work-card" data-category="lp">
+        <div class="work-image">
+          <img src="img/Nokia XR21.png" alt="LP" />
+          <a href="./projects/project-4.html" class="hover-link">詳細を見る</a>
+        </div>
+        <div class="work-content">
+          <h3>LP</h3>
+          <p>新規LP制作</p>
+          <div class="work-tags">
+            <span class="tag gradient-tag">Adobe Illustrator</span>
+            <span class="tag gradient-tag">Figma</span>
+            <span class="tag gradient-tag">Photoshop</span>
+          </div>
+          <div class="work-link-inline">
+            <a href="./projects/project-4.html" class="project-link">プロジェクトを見る</a>
+            <a href="./projects/project-4.html" class="work-bottom-link">
+              <img src="./img/Button.png" alt="詳細アイコン" class="project-icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- コーディングカード -->
+      <div class="work-card" data-category="code">
+        <div class="work-image">
+          <img src="./img/Group 202.png" alt="LP" />
+          <a href="./projects/project-5.html" class="hover-link">詳細を見る</a>
+        </div>
+        <div class="work-content">
+          <h3>コーディング</h3>
+          <p>商品紹介と新規顧客獲得の為のLP</p>
+          <div class="work-tags">
+            <span class="tag gradient-tag">HTML/CSS</span>
+            <span class="tag gradient-tag">Figma</span>
+            <span class="tag gradient-tag">JavaScript</span>
+          </div>
+          <div class="work-link-inline">
+            <a href="./projects/project-5.html" class="project-link">プロジェクトを見る</a>
+            <a href="./projects/project-5.html" class="work-bottom-link">
+              <img src="./img/Button.png" alt="詳細アイコン" class="project-icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="all-projects-btn-container">
+      <a href="#" class="btn-glass" id="all-projects-btn">すべてのプロジェクトを見る</a>
+    </div>
+  </section>
+
+
+
+
+  <!-- ===== About Section ===== -->
+  <section id="about" class="about section fade-in">
+  <h2>私について</h2>
+
+  <div class="about-content">
+    <div class="about-text-wrapper">
+      <h3 class="about-name">Nemoto Aoi</h3>
+      <div class="about-text">
+  <p class="mobile-break">
+    1995年生まれ　30歳　
+    <span>栃木県出身　東京住み</span>
+  </p>
+  <p class="mobile-break">
+    自分とクライアントの双方が<span>無駄なく効率的に、</span><span>得意な分野で働ける形を追求した結果、</span><span>たどり着いたのがWEBデザイナーでした。</span>
+  </p>
+  <p class="mobile-break">
+    ビジネスにはどうしても切り離せない<span>＂認知＂という課題をWEBという広い世界で</span><span>そんな悩みを少しでも、</span><span>軽減する事ができると思い、</span><span>これからの活動を</span><span>とても楽しみにしています。</span>
+  </p>
+</div>
+
+    </div>
+    <div class="about-img"><img src="./img/プロフィール写真.png" alt="profile" /></div>
+  </div>
+
+  <div class="tag-container">
+    <span class="tag gradient-tag">Figma</span>
+    <span class="tag gradient-tag">Photoshop</span>
+    <span class="tag gradient-tag">Illustrator</span>
+    <span class="tag gradient-tag">HTML/CSS</span>
+    <span class="tag gradient-tag">JavaScript</span>
+    <span class="tag gradient-tag">WordPress</span>
+    <span class="tag gradient-tag">Adobe XD</span>
+  </div>
+
+
+</section>
+
+
+  <!-- ===== Skills Section ===== -->
+<section id="skills" class="skills section fade-in">
+  <h2>スキル</h2>
+  <div class="skills-grid">
+
+    <!-- デザイン -->
+    <div class="skill-card">
+      <div class="icon-wrapper">
+        <img src="./img/Background.png" alt="Design Icon" class="skill-icon" />
+      </div>
+      <h3 class="skill-category">デザイン</h3>
+      <ul>
+        <li>
+          <div class="skill-name-wrapper">
+            <span class="skill-name">UI/UX Design</span>
+            <span class="skill-percentage" data-percent="75">75%</span>
+          </div>
+          <div class="bar-bg">
+            <span class="bar" data-percent="75"></span>
+          </div>
+        </li>
+        <li>
+          <div class="skill-name-wrapper">
+            <span class="skill-name">Figma</span>
+            <span class="skill-percentage" data-percent="90">90%</span>
+          </div>
+          <div class="bar-bg">
+            <span class="bar" data-percent="90"></span>
+          </div>
+        </li>
+        <li>
+          <div class="skill-name-wrapper">
+            <span class="skill-name">Illustrator</span>
+            <span class="skill-percentage" data-percent="60">60%</span>
+          </div>
+          <div class="bar-bg">
+            <span class="bar" data-percent="60"></span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- コーディング -->
+    <div class="skill-card">
+      <div class="icon-wrapper">
+        <img src="./img/Background2.png" alt="Code Icon" class="skill-icon" />
+      </div>
+      <h3 class="skill-category">コーディング</h3>
+      <ul>
+        <li>
+          <div class="skill-name-wrapper">
+            <span class="skill-name">HTML</span>
+            <span class="skill-percentage" data-percent="85">85%</span>
+          </div>
+          <div class="bar-bg">
+            <span class="bar" data-percent="85"></span>
+          </div>
+        </li>
+        <li>
+          <div class="skill-name-wrapper">
+            <span class="skill-name">CSS</span>
+            <span class="skill-percentage" data-percent="85">85%</span>
+          </div>
+          <div class="bar-bg">
+            <span class="bar" data-percent="85"></span>
+          </div>
+        </li>
+        <li>
+          <div class="skill-name-wrapper">
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-percentage" data-percent="75">75%</span>
+          </div>
+          <div class="bar-bg">
+            <span class="bar" data-percent="75"></span>
+          </div>
+        </li>
+        <li>
+          <div class="skill-name-wrapper">
+            <span class="skill-name">Visual Studio Code</span>
+            <span class="skill-percentage" data-percent="85">85%</span>
+          </div>
+          <div class="bar-bg">
+            <span class="bar" data-percent="85"></span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- その他ツール -->
+    <div class="skill-card">
+      <div class="icon-wrapper">
+        <img src="./img/Background3.png" alt="Tools Icon" class="skill-icon" />
+      </div>
+      <h3 class="skill-category">その他ツール</h3>
+      <ul>
+        <li>
+          <div class="skill-name-wrapper">
+            <span class="skill-name">Slack</span>
+            <span class="skill-percentage" data-percent="80">80%</span>
+          </div>
+          <div class="bar-bg">
+            <span class="bar" data-percent="80"></span>
+          </div>
+        </li>
+        <li>
+          <div class="skill-name-wrapper">
+            <span class="skill-name">Notion</span>
+            <span class="skill-percentage" data-percent="75">75%</span>
+          </div>
+          <div class="bar-bg">
+            <span class="bar" data-percent="75"></span>
+          </div>
+        </li>
+        <li>
+          <div class="skill-name-wrapper">
+            <span class="skill-name">ChatGPT</span>
+            <span class="skill-percentage" data-percent="100">100%</span>
+          </div>
+          <div class="bar-bg">
+            <span class="bar" data-percent="100"></span>
+          </div>
+        </li>
+        <li>
+          <div class="skill-name-wrapper">
+            <span class="skill-name">ZOOM / Google Meet</span>
+            <span class="skill-percentage" data-percent="100">100%</span>
+          </div>
+          <div class="bar-bg">
+            <span class="bar" data-percent="100"></span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <nav class="footer-nav">
+    <ul class="nav-links">
+      <li><a href="#works">制作実績</a></li>
+      <li><a href="#about">私について</a></li>
+      <li><a href="#skills">スキル</a></li>
+    </ul>
+  </nav>
+  <p>© 2025 Nemoto Aoi</p>
+</footer>
+
+</body>
+</html>
