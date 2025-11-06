@@ -74,7 +74,7 @@ img {
 }
 
 /* レスポンシブ(モバイル) */
-@media screen and (max-width:375px) {
+@media screen and (max-width:540px) {
   .menu-toggle {
     display: flex;
   }
@@ -104,7 +104,7 @@ img {
 }
 
 /* レスポンシブ375px以下で下線を非表示 */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 540px) {
   .nav-links li a::after {
     display: none;
   }
@@ -167,7 +167,7 @@ margin: 0;
 
 
 /* SP版 */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 540px) {
   .project-title-main {
     font-size: 48px;   /* 少し縮小 */
   }
@@ -277,7 +277,7 @@ margin: 0;
 /* ===========================
    レスポンシブ (SP: max-width 375px)
 =========================== */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 540px) {
   .project-overview {
     padding: 2rem 1rem;
   }
@@ -390,7 +390,7 @@ margin: 0;
 }
 
 /* レスポンシブ 375px */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 540px) {
   .point-item {
     flex-direction: column;
     align-items: center;
@@ -517,7 +517,7 @@ margin: 0;
 }
 
 /* レスポンシブ対応（画面幅375px以下） */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 540px) {
   .visual-dual-container {
     flex-direction: column;
     gap: 1.5rem;
@@ -1054,7 +1054,7 @@ margin: 0;
 }
 
 /* ===== レスポンシブ (375px) ===== */
-@media screen and (max-width: 375px) {
+@media screen and (max-width:540px) {
   .project-title-main {
     font-size: 2.5rem;
   }
