@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+/*ここでは各ファイルで使用する変数を定義してください。*/
+
+// color
+$c-main: #00bbc9;
+$c-sub: #e6fdff;
+$c-accent: #f87aac;
+$c-l-blue: #83eae9;
+$c-black: #383838;
+$c-white: #ffffff;
+$c-grade: linear-gradient(
+  45deg,
+  rgba(146, 245, 238, 1) 0%,
+  rgba(0, 212, 255, 1) 100%
+);
+
+// font
+@mixin f-gothic() {
+  font-family: "Noto Sans JP", "メイリオ", "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", sans-serif;
+  font-weight: 400;
+}
+
+// コンテンツ幅 gutter
+$gap-container: 30px;
+
+// コンテンツ幅
+$container-wide: 1200px + ($gap-container * 2);
+$container-middle: 1024px + ($gap-container * 2);
+$container-narrow: 900px + ($gap-container * 2);
+
+@mixin ct-width($ct: $container-narrow) {
+  max-width: $ct;
+  padding-left: $gap-container;
+  padding-right: $gap-container;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// ブレイクポイントの設定
+$breakpoints: (
+  "sm": (
+    min-width: 576px,
+  ),
+  "md": (
+    min-width: 768px,
+  ),
+  "lg": (
+    min-width: 992px,
+  ),
+  "xl": (
+    min-width: 1200px,
+  ),
+  "xxl": (
+    min-width: 1400px,
+  ),
+) !default;
+
+@mixin min($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media screen and #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+
+  // マップ型で定義されていない値が呼び出された時はエラーを返す
+  @else {
+    @error "指定されたブレークポイントは定義されていません。" + "指定できるブレークポイントは次のとおりです。 -> #{map-keys($breakpoints)}";
+  }
+}
+
+// font rem変換 //
+@function rem($px, $base: 16) {
+  $value: ($px / $base) * 1rem;
+  @return $value;
+}
+
+// font vw変換 //
+@function vw($px, $base: 375) {
+  $value: ($px / $base) * 100vw;
+  @return $value;
+}
